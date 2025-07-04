@@ -4,7 +4,6 @@
 	import { quintOut } from 'svelte/easing';
 	import BackgroundRemoverWorker from '$lib/worker/background-remover.worker.ts?worker';
 
-	// --- Gerenciamento de Estado (Svelte 5 syntax) ---
 	let imageFile = $state<File | null>(null);
 	let outputUrl = $state<string | null>(null);
 	let loading = $state(false);
